@@ -369,9 +369,9 @@ angular.module("gmap_test.controllers", [])
 	
 	
 	// TODO: mapsCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=map";
+	$scope.fetchURL = "seusite/rest-api.php?json=map";
 	// TODO: mapsCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=map&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/rest-api.php?json=map&callback=JSON_CALLBACK";
 	// TODO: mapsCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash( $scope.fetchURL.replace(targetQuery,raplaceWithQuery));
 	
@@ -755,9 +755,9 @@ $ionicConfig.backButton.text("");
 	
 	
 	// TODO: noticiasCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=noticias";
+	$scope.fetchURL = "seusite/rest-api.php?json=noticias";
 	// TODO: noticiasCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=noticias&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/rest-api.php?json=noticias&callback=JSON_CALLBACK";
 	// TODO: noticiasCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash( $scope.fetchURL.replace(targetQuery,raplaceWithQuery));
 	
@@ -1106,9 +1106,9 @@ $ionicConfig.backButton.text("");
 	// Retrieving data
 	var itemID = $stateParams.id;
 	// TODO: noticias_singlesCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=noticias&id=" + itemID;
+	$scope.fetchURL = "seusite/rest-api.php?json=noticias&id=" + itemID;
 	// TODO: noticias_singlesCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://giroufabc1.esy.es/alimenta/rest-api.php?json=noticias&id=" + itemID + "&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/alimenta/rest-api.php?json=noticias&id=" + itemID + "&callback=JSON_CALLBACK";
 	// TODO: noticias_singlesCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash($scope.fetchURL);
 	

@@ -7,10 +7,10 @@ $config["user"] 		= "user" ; 		//Username SQL
 $config["pass"] 		= "pass" ; 		//Password SQL
 $config["dbase"] 		= "banco_de_dados" ; 		//Database
 $config["utf8"] 		= true ; 		//turkish charset set false
-$config["abs_url_images"] 		= "urlabsoluta/media/image/" ; 		//Absolute Images URL
-$config["abs_url_videos"] 		= "urlabsoluta/media/media/" ; 		//Absolute Videos URL
-$config["abs_url_audios"] 		= "urlabsoluta/media/media/" ; 		//Absolute Audio URL
-$config["abs_url_files"] 		= "urlabsoluta/media/file/" ; 		//Absolute Files URL
+$config["abs_url_images"] 		= "localhost/media/image/" ; 		//Absolute Images URL
+$config["abs_url_videos"] 		= "localhost/media/media/" ; 		//Absolute Videos URL
+$config["abs_url_audios"] 		= "localhost/media/media/" ; 		//Absolute Audio URL
+$config["abs_url_files"] 		= "localhost/media/file/" ; 		//Absolute Files URL
 $config["image_allowed"][] 		= array("mimetype"=>"image/jpeg","ext"=>"jpg") ; 		//whitelist image
 $config["image_allowed"][] 		= array("mimetype"=>"image/jpg","ext"=>"jpg") ; 		
 $config["image_allowed"][] 		= array("mimetype"=>"image/png","ext"=>"png") ; 		
