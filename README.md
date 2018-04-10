@@ -1,12 +1,12 @@
 # AlimenteUmCaoApp
 
-#DEMO DO PAINEL:
+## DEMO DO PAINEL:
 ![Pagina inicial pós-login](https://i.imgur.com/122gR0a.jpg)
 
 ![Editar/Adicionar entradas](https://i.imgur.com/0Fhv1nJ.jpg)
 
 
-#DEMO DO APP:
+## DEMO DO APP:
 Mapa com marcadores:
 ![Mapa apontando os locais](https://i.imgur.com/nU24PxA.jpg)
 
