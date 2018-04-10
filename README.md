@@ -24,21 +24,21 @@ Adicione as configurações do seu servidor SQL nos parâmetros contidos nas pri
 
 /Painel Backend/rest-api.php
 
-Após a correta instalação da rest-api e do painel, adicione o endereço da instalação no lugar da expressão "seusite" contida nas linhas 372,374,758,760,1009,1111 do arquivo /Ionic App/www/js/controllers.js
+Após a correta instalação da rest-api e do painel, adicione o endereço online da instalação no lugar da expressão "seusite" contida nas linhas 372,374,758,760,1009,1111 do arquivo /Ionic App/www/js/controllers.js
 
-No Arquivo /Ionic App/www/index.html, adicione sua API KEY do Google Maps na linha 33, no lugar da expressão "suaAPIKey". Caso ainda não tenha uma, obtenha em: https://developers.google.com/maps/documentation/javascript/get-api-key
+No Arquivo /Ionic App/www/index.html, adicione sua API KEY do Google Maps na linha 33, no lugar da expressão "suaAPIKey". </br>Caso ainda não tenha uma, obtenha em: https://developers.google.com/maps/documentation/javascript/get-api-key
 
 Após isso, você já está pronto para compilar seu aplicativo utilizando Cordova ou Ionic.
 Abaixo uma lista de comandos que deverá ser executada para instalar todos os plugins utilizados:
 
 > cordova plugin add cordova-plugin-device --save </br>
-> cordova plugin add cordova-plugin-console --save
-> cordova plugin add cordova-plugin-splashscreen --save
-> cordova plugin add cordova-plugin-statusbar --save
-> cordova plugin add cordova-plugin-whitelist --save
-> cordova plugin add ionic-plugin-keyboard --save
-> cordova plugin add cordova-plugin-dialogs --save
-> cordova plugin add cordova-plugin-inappbrowser --save
+> cordova plugin add cordova-plugin-console --save </br>
+> cordova plugin add cordova-plugin-splashscreen --save </br>
+> cordova plugin add cordova-plugin-statusbar --save </br>
+> cordova plugin add cordova-plugin-whitelist --save </br>
+> cordova plugin add ionic-plugin-keyboard --save </br>
+> cordova plugin add cordova-plugin-dialogs --save </br>
+> cordova plugin add cordova-plugin-inappbrowser --save </br>
 > cordova plugin add cordova-plugin-velda-devicefeedback --save
 
 
@@ -52,7 +52,7 @@ ou
 
 Rode os comandos de pré-compilação:
 
-> cordova clean
+> cordova clean </br>
 > cordova requirements
 
 
