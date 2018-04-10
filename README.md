@@ -19,10 +19,14 @@
 
 Crie uma database e rode nela a query contida em "/Painel Backend/rest-api.sql"
 
-Adicione as configurações do seu servidor SQL nos parâmetros contidos nas primeiras linhas dos arquivos:
-/Painel Backend/index.php
+Adicione as configurações do seu servidor SQL nos parâmetros contidos nas primeiras linhas dos arquivos:</br>
+/Painel Backend/index.php</br>
 
-/Painel Backend/rest-api.php
+/Painel Backend/rest-api.php</br>
+
+O usuário e a senha padrão para login no painel são:</br>
+admin</br>
+admin</br> (podem ser alterados modificando-se as linhas 12 e 13 do arquivo /Painel Backend/index.php
 
 Após a correta instalação da rest-api e do painel, adicione o endereço online da instalação no lugar da expressão "seusite" contida nas linhas 372,374,758,760,1009,1111 do arquivo /Ionic App/www/js/controllers.js
 
