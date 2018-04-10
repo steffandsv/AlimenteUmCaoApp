@@ -31,7 +31,7 @@ No Arquivo /Ionic App/www/index.html, adicione sua API KEY do Google Maps na lin
 Após isso, você já está pronto para compilar seu aplicativo utilizando Cordova ou Ionic.
 Abaixo uma lista de comandos que deverá ser executada para instalar todos os plugins utilizados:
 
-> cordova plugin add cordova-plugin-device --save
+> cordova plugin add cordova-plugin-device --save </br>
 > cordova plugin add cordova-plugin-console --save
 > cordova plugin add cordova-plugin-splashscreen --save
 > cordova plugin add cordova-plugin-statusbar --save
