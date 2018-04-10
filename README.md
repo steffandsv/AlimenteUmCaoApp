@@ -21,6 +21,7 @@ Crie uma database e rode nela a query contida em "/Painel Backend/rest-api.sql"
 
 Adicione as configurações do seu servidor SQL nos parâmetros contidos nas primeiras linhas dos arquivos:
 /Painel Backend/index.php
+
 /Painel Backend/rest-api.php
 
 Após a correta instalação da rest-api e do painel, adicione o endereço da instalação no lugar da expressão "seusite" contida nas linhas 372,374,758,760,1009,1111 do arquivo /Ionic App/www/js/controllers.js
@@ -30,4 +31,34 @@ No Arquivo /Ionic App/www/index.html, adicione sua API KEY do Google Maps na lin
 Após isso, você já está pronto para compilar seu aplicativo utilizando Cordova ou Ionic.
 Abaixo uma lista de comandos que deverá ser executada para instalar todos os plugins utilizados:
 
-$ cordova plugin add cordova-plugin-device --save
+> cordova plugin add cordova-plugin-device --save
+> cordova plugin add cordova-plugin-console --save
+> cordova plugin add cordova-plugin-splashscreen --save
+> cordova plugin add cordova-plugin-statusbar --save
+> cordova plugin add cordova-plugin-whitelist --save
+> cordova plugin add ionic-plugin-keyboard --save
+> cordova plugin add cordova-plugin-dialogs --save
+> cordova plugin add cordova-plugin-inappbrowser --save
+> cordova plugin add cordova-plugin-velda-devicefeedback --save
+
+
+Finalmente, adicione as plataformas para as quais você deseja compilar o app:
+
+> cordova platform add android
+
+ou
+
+> cordova platform add ios
+
+Rode os comandos de pré-compilação:
+
+> cordova clean
+> cordova requirements
+
+
+Compile:
+
+> cordova build android[ou ios]
+
+
+
