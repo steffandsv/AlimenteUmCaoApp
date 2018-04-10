@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+		<title>GMAP Test</title>
+		<link href="lib/ionic/css/ionic.min.css" rel="stylesheet" />
+		<link href="lib/ionic-material/ionic.material.min.css" rel="stylesheet" />
+		<link href="lib/ion-md-input/css/ion-md-input.min.css" rel="stylesheet" />
+		<link href="lib/ion-datetime-picker/ion-datetime-picker.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body ng-app="gmap_test" ng-controller="indexCtrl" id="{{ page_id }}">
+		<ion-nav-bar class="navbar-title bar-dark">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+		</ion-nav-bar>
+		<ion-nav-view>
+		</ion-nav-view>
+		<script src="lib/ionic/js/angular-chart/Chart.min.js"></script>
+		<script src="lib/pdf/pdf.js"></script>
+		<script src="lib/localforage/localforage.min.js"></script>
+		<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+		<script src="lib/ionic/js/angular-utf8-base64/angular-utf8-base64.js"></script>
+		<script src="lib/ionic/js/angular-chart/angular-chart.min.js"></script>
+		<script src="lib/ionic/js/angular-md5/angular-md5.min.js"></script>
+		<script src="lib/ionic-material/ionic.material.min.js"></script>
+		<script src="lib/ion-md-input/js/ion-md-input.min.js"></script>
+		<script src="lib/ionic-rating/ionic-rating.min.js"></script>
+		<script src="lib/ion-slide-tabs/js/slidingTabsDirective.js"></script>
+		<script src="lib/ion-datetime-picker/ion-datetime-picker.min.js"></script>
+		<script src="lib/ionic/js/angular-google-maps/ng-map.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYU-7ROi4ly1gZ0KK9k9eK2jLULzi8HAU&callback"></script>
+		<script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js"></script>
+		<script src="lib/ionic/js/angular-cordova/ng-cordova.min.js"></script>
+		<!-- cordova script (this will be a 404 during development) -->
+		<script src="cordova.js"></script>
+		<!-- your app's js -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/services.js"></script>
+	</body>
+</html>

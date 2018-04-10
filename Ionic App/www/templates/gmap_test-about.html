@@ -1,0 +1,41 @@
+	<ion-view view-title="Sobre n&oacute;s" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title>Sobre nós</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-about" class="padding page-about">
+		 
+  <div class="text-center">
+    <p>Alimente um Cão</p>
+  </div>
+ 
+<br/>
+
+<div class="list card">
+ 
+  <a class="item item-icon-left" ng-click="openURL('https://www.facebook.com/luizinho.mafra33')" >
+    <i class="positive icon ion-social-facebook"></i>
+    Fale comigo no Facebook
+  </a>
+  
+  <a class="item item-icon-left" ng-click="openURL('http://youtube.com/canalmafra')" >
+    <i class="calm icon ion-social-twitter"></i>
+   Se inscreva no meu canal
+  </a>
+  
+   <a class="item item-icon-left" ng-click="openURL('mailto:steffanvernillo@gmail.com')" >
+    <i class="icon ion-code royal"></i>
+    Agradecimentos ao<br/>
+    <span>
+      Desenvolvedor Steffan V.
+    </span>
+  </a>
+   
+</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

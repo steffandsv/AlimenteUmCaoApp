@@ -1,0 +1,9 @@
+<div class="tabs tabs-calm-900 tabs-icon-top static">
+    <a ng-click="pdfPrevious()" class="tab-item"><i class="icon ion-chevron-left"></i> Previous</a>
+	<a ng-click="pdfRotate()" class="tab-item"><i class="icon ion-loop"></i> Rotate</a>
+    <a ng-click="pdfNext()" class="tab-item"><i class="icon ion-chevron-right"></i> Next</a>
+</div>
+<label class="item item-input">
+    <span class="input-label">page: </span><input type="text" min="1" size="1" ng-model="pageNum"/><span class="input-label">/ {{pageCount}}</span>
+</label>
+<canvas id="pdf-canvas" class="rotate0"></canvas>

@@ -1,0 +1,38 @@
+	<ion-view view-title="Localizar Reposit&oacute;rios" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title>Localizar Repositórios</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-maps" class=" page-maps">
+					<!-- code refresh -->
+			<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+			<!-- ./code refresh -->
+
+
+			<ng-map draggable="true" class="gmapmarker-map" zoom="15" center="-20.689520,-48.413492" width="100%" height="100%" default-style="false">
+				<marker ng-repeat="item in data_maps | filter:filter_maps as results" on-click="openModal($event)" position="{{item.location}}" clickable="true" id="{{item.nid}}" ></marker>
+			</ng-map>
+
+
+			<script id="map-single.html" type="text/ng-template">
+				<ion-modal-view>
+					<ion-header-bar class="bar bar-header light bar-balanced-900">
+						<div class="header-item title">{{ map.title | to_trusted }}</div>
+						<div class="buttons buttons-right header-item"><span class="right-buttons"><button class="button button-icon button-clear ion-close ink-black" ng-click="modal.hide()"></button></span></div>
+					</ion-header-bar>
+					<ion-content>
+					<div class="item item-divider"  ng-bind-html="map.title | to_trusted">{{map.title}}</div>
+					<div class="item item-text-wrap noborder to_trusted" ng-bind-html="map.Description | strHTML"></div>
+					<a ng-href="https://www.google.com/maps/dir/?api=1&destination={{map.location}}"><button class="button button-assertive">Como chegar</button></a>
+					</ion-content>
+				</ion-modal-view>
+			</script>
+
+
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

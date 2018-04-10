@@ -1,0 +1,27 @@
+	<ion-view view-title="{{ noticias.titulo }}" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title>{{ noticias.titulo }}</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-noticias_singles" class="page-noticias_singles">
+		
+			<ion-refresher pulling-text="Puxe para atualizar"  on-refresh="doRefresh()"></ion-refresher>
+			<div class="hero slide-up dark-bg" style="background-image: url('data/images/background/bg0.jpg');">
+				<div class="padding-horizontal padding-bottom content content">
+					<img alt="" class="avatar" ng-src="{{noticias.foto}}" />
+					<h3><a class="light">{{ noticias.titulo }}</a></h3>
+					<h4 class="light">&nbsp;</h4>
+				</div>
+			</div>
+			<div class="list ">
+					<div class="item item-divider"  ng-bind-html="noticias.titulo | to_trusted">{{noticias.titulo}}</div>
+					<div class="item item-text-wrap noborder to_trusted" ng-bind-html="noticias.noticia | strHTML"></div>
+			</div>
+			<br/><br/><br/>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

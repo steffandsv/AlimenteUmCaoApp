@@ -1,0 +1,54 @@
+{
+  "name": "angular-utf8-base64",
+  "version": "0.0.5",
+  "author": {
+    "name": "Ivan Hayes",
+    "url": "http://www.ivanhayes.com"
+  },
+  "description": "Base64 encoding/decoding with UTF8 support for AngularJS Apps, and including CommonJS module support.",
+  "main": "angular-utf8-base64.js",
+  "keywords": [
+    "Base64",
+    "angular",
+    "javascript",
+    "library",
+    "encoding",
+    "ajax"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/munkychop/angular-utf8-base64.git"
+  },
+  "gitHead": "56e3abee98e1fad1ec260579722d986ea9686c96",
+  "bugs": {
+    "url": "https://github.com/munkychop/angular-utf8-base64/issues"
+  },
+  "homepage": "https://github.com/munkychop/angular-utf8-base64#readme",
+  "_id": "angular-utf8-base64@0.0.5",
+  "scripts": {},
+  "_shasum": "95158d6809dbae1eb9fa03af45d67187b0788cf6",
+  "_from": "angular-utf8-base64@latest",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "name": "munkychop",
+    "email": "hello@ivanhayes.com"
+  },
+  "maintainers": [
+    {
+      "name": "munkychop",
+      "email": "hello@ivanhayes.com"
+    }
+  ],
+  "dist": {
+    "shasum": "95158d6809dbae1eb9fa03af45d67187b0788cf6",
+    "tarball": "https://registry.npmjs.org/angular-utf8-base64/-/angular-utf8-base64-0.0.5.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/angular-utf8-base64-0.0.5.tgz_1470306023640_0.0803906877990812"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-utf8-base64/-/angular-utf8-base64-0.0.5.tgz"
+}

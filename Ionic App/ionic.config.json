@@ -1,0 +1,9 @@
+{
+  "name": "alimenteumcao",
+  "app_id": "com.steff.alimenteumcao",
+  "type": "ionic1",
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  }
+}

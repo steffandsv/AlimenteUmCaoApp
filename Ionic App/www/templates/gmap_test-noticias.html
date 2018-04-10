@@ -1,0 +1,58 @@
+	<ion-view view-title="Noticias" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title>Noticias</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll scroll="true"  overflow-scroll="true"   id="page-noticias" class=" page-noticias">
+		
+			<!-- code refresh -->
+			<ion-refresher pulling-text="Puxe para atualizar"  on-refresh="doRefresh()"></ion-refresher>
+			<!-- ./code refresh -->
+			
+
+			<!-- code search -->
+			<ion-list class="card list" >
+				<div class="item item-input">
+					<i class="icon ion-search placeholder-icon"></i>
+					<input type="search" ng-model="filter_noticiass" placeholder="Pesquisar" aria-label="filter noticiass" />
+				</div>
+			</ion-list>
+			<!-- ./code search -->
+
+
+			<!-- code listing -->
+			<div class="list animate-none">
+				<div class="list card" ng-repeat="item in noticiass | filter:filter_noticiass as results" ng-init="$last ? fireEvent() : null" href="#/gmap_test/noticias_singles/{{item.id}}" >
+					<div class="item item-colorful"  ng-bind-html="item.titulo | to_trusted"></div>
+					<div class="item item-thumbnail-left item-text-wrap">
+						<img alt="" class="full-image" image-lazy-loader="lines" image-lazy-src="{{item.foto}}"   />
+						<div class="to_trusted" ng-bind-html="item.noticia | limitTo:140 | to_trusted"></div>
+				</div>
+					<a class="item button button-clear colorful ink" href="#/gmap_test/noticias_singles/{{item.id}}">More</a>
+				</div>
+			</div>
+			<!-- ./code listing -->
+			<!-- code infinite scroll -->
+			<ion-list class="list">
+				<ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="onInfinite()" distance="5px" ng-if="hasMoreData"></ion-infinite-scroll>
+			</ion-list>
+			<!-- ./code infinite scroll -->
+
+
+			<!-- code search result not found -->
+			<ion-list class="list">
+				<div class="item" ng-if="results.length == 0" >
+					<p>Nenhuma not&iacute;cia encontrada</p>
+				</div>
+			</ion-list>
+			<!-- code search result not found -->
+
+
+
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
